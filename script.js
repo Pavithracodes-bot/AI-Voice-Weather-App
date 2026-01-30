@@ -316,3 +316,4 @@ function AetherTalk(text) {
         setTimeout(() => bot.classList.remove('talking'), 3000);
     }
 }
+
