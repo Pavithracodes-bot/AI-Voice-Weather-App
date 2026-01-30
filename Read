@@ -1,0 +1,46 @@
+# 🌦️ AETHER OS – AI Weather Dashboard
+
+AETHER OS is a futuristic, AI-inspired weather dashboard that provides real-time weather data with an interactive avatar, voice assistance, and a premium glassmorphism UI.
+
+This project was built as a frontend portfolio project using modern web technologies and public APIs.
+
+---
+
+## 🚀 Features
+
+- 🌍 Real-time weather data (city search & GPS)
+- 🤖 AI-style interactive avatar
+- 🔊 Voice feedback using Web Speech API
+- 🌡️ Temperature, feels-like, wind speed
+- 💧 Humidity & visibility analysis
+- 🌬️ Air Quality Index (AQI)
+- 📅 3-day weather forecast
+- 📱 Fully responsive (desktop & mobile)
+- ✨ Glassmorphism & animated UI
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5**
+- **CSS3** (Glassmorphism, animations, responsive design)
+- **JavaScript (ES6)**
+- **OpenWeatherMap API**
+- **Web Speech API**
+
+---
+
+## 🔑 API Key Setup (Required)
+
+This project uses the **OpenWeatherMap API**.
+
+To run this project locally:
+
+1. Create a free account at  
+   https://openweathermap.org
+
+2. Generate an API key
+
+3. Open `script.js` and replace:
+   ```js
+   const API_KEY = "YOUR_API_KEY";

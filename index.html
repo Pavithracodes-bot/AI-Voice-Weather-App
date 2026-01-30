@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER OS • Elite Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mesh-background">
+        <div class="mesh-ball ball-1"></div>
+        <div class="mesh-ball ball-2"></div>
+    </div>
+
+    <main class="dashboard-container">
+        <header class="glass-panel header-bar">
+            <div class="logo">
+                <i class="fa-solid fa-atom fa-spin"></i> AETHER <small>PRO</small>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="SEARCH CITY...">
+                <button id="search-btn" class="mega-search-btn">
+                    <i class="fa-solid fa-satellite-dish"></i> SCAN
+                </button>
+            </div>
+
+            <div class="controls">
+                <button class="control-btn" id="voice-toggle" title="AI Voice">
+                    <i class="fa-solid fa-microphone-slash"></i>
+                </button>
+                <button class="control-btn" id="loc-btn" title="My Location">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                </button>
+                <button class="control-btn" id="unit-btn">°C</button>
+            </div>
+        </header>
+
+        <div class="content-grid">
+            <section class="card glass-card">
+                <div class="status-header">
+                    <span class="dot pulse"></span> <span id="city-name">INITIALIZING...</span>
+                </div>
+                <div class="temp-wrapper">
+                    <h1 id="temperature">--</h1><span class="symbol">°</span>
+                </div>
+                <div class="condition-badge" id="weather-desc">STANDBY</div>
+                <div class="quick-stats">
+                    <div class="stat-box"><span>FEELS</span><b id="feels-like">--</b></div>
+                    <div class="stat-box"><span>WIND</span><b id="wind-speed">--</b></div>
+                </div>
+            </section>
+
+            <section class="card glass-card avatar-section">
+                <div class="speech-bubble">
+                    <span id="ai-text">System ready. Awaiting command...</span>
+                </div>
+                <div class="avatar" id="avatar">
+                    <div class="avatar-head">
+                        <div class="avatar-face">
+                            <div class="eyes"><div class="eye"></div><div class="eye"></div></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card glass-card">
+                <h3 class="panel-tag">3-DAY FORECAST</h3>
+                <div id="forecast-display" class="forecast-list"></div>
+            </section>
+        </div>
+
+        <footer class="data-footer">
+            <div class="holo-box glass-panel luxury-card" id="card-humidity">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="info">
+                    <span>HUMIDITY</span>
+                    <h4 id="humidity">--</h4>
+                    <small id="humidity-text" style="color:#00f2fe;">--</small>
+                </div>
+            </div>
+
+            <div class="holo-box glass-panel luxury-card" id="card-visibility">
+                <i class="fa-solid fa-eye"></i>
+                <div class="info">
+                    <span>VISIBILITY</span>
+                    <h4 id="visibility">--</h4>
+                    <small id="visibility-text" style="color:#7000ff;">--</small>
+                </div>
+            </div>
+
+            <div class="holo-box glass-panel luxury-card" id="card-aqi">
+                <i class="fa-solid fa-wind"></i>
+                <div class="info">
+                    <span>AIR QUALITY</span>
+                    <h4 id="aqi-status">--</h4>
+                    <small id="aqi-desc" style="color:#ff4b2b;">--</small>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
